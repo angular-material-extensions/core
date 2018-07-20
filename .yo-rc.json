@@ -1,0 +1,48 @@
+{
+  "generator-ngx-library": {
+    "version": "6.2.1",
+    "authorName": "Anthony Nahas",
+    "authorEmail": "anthony.na@hotmail.de",
+    "githubUsername": "angular-material-extensions",
+    "githubRepoName": "core",
+    "projectName": "core",
+    "projectVersion": "0.0.1",
+    "projectDescription": "Set of components, directives and services to boost the app development with angular material 2",
+    "projectKeywords": [
+      "angular",
+      "material2",
+      "material design",
+      "library",
+      "core",
+      "components",
+      "directives",
+      "utilities",
+      "extension"
+    ],
+    "ngVersion": "6.0.0",
+    "ngModules": [
+      "core",
+      "common"
+    ],
+    "otherDependencies": [
+      "@angular/cdk",
+      "@angular/material",
+      "@angular/flex-layout"
+    ],
+    "additionalPackageFiles": [
+      "assets"
+    ],
+    "dependenciesRange": "^",
+    "ngPrefix": "mat",
+    "testingFramework": "jest",
+    "useGreenkeeper": true,
+    "useCompodoc": true,
+    "enforceNgGitCommitMsg": true,
+    "exclusions": [
+      "config/karma.conf.js",
+      "config/webpack.test.js",
+      "config/karma-test-shim.js"
+    ],
+    "deleteExclusions": []
+  }
+}
