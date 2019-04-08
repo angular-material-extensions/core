@@ -7,25 +7,28 @@
     core
   </title>
   <base href=".">
-  <meta name="description" content="Set of components, directives and services to boost the app development with angular material 2" />
+  <meta name="description"
+        content="Set of components, directives and services to boost the app development with angular material 2"/>
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@angular-material-extensions">
   <meta name="twitter:title" content="core">
   <!-- Page description less than 200 characters -->
-  <meta name="twitter:description" content="Set of components, directives and services to boost the app development with angular material 2">
+  <meta name="twitter:description"
+        content="Set of components, directives and services to boost the app development with angular material 2">
   <meta name="twitter:creator" content="@angular-material-extensions">
   <!-- Twitter Summary card images must be at least 120x120px -->
   <meta name="twitter:image" content="https://angular-material-extensions.github.io/core/assets/logo.svg">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="core" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://angular-material-extensions.github.io/core" />
-  <meta property="og:image" content="https://angular-material-extensions.github.io/core/assets/logo.svg" />
-  <meta property="og:description" content="Set of components, directives and services to boost the app development with angular material 2" />
-  <meta property="og:site_name" content="core" />
+  <meta property="og:title" content="core"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://angular-material-extensions.github.io/core"/>
+  <meta property="og:image" content="https://angular-material-extensions.github.io/core/assets/logo.svg"/>
+  <meta property="og:description"
+        content="Set of components, directives and services to boost the app development with angular material 2"/>
+  <meta property="og:site_name" content="core"/>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,7 +37,38 @@
 </head>
 
 <body>
-  <app-root>Loading...</app-root>
+
+<!-- Material Splash Screen -->
+<div id="fuse-splash-screen">
+
+  <div class="center">
+
+    <div class="logo">
+      <img width="128" src="assets/logo.svg">
+    </div>
+
+    <!-- Material Design Spinner -->
+    <div class="spinner-wrapper">
+      <div class="spinner">
+        <div class="inner">
+          <div class="gap"></div>
+          <div class="left">
+            <div class="half-circle"></div>
+          </div>
+          <div class="right">
+            <div class="half-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Material Design Spinner -->
+
+  </div>
+
+</div>
+<!-- / Material Splash Screen -->
+
+<app-root></app-root>
 </body>
 
 </html>
