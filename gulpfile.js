@@ -78,7 +78,7 @@ const argv = yargs
   .argv;
 
 const config = {
-  libraryName: 'core',
+  libraryName: '@angular-material-extensions/core',
   unscopedLibraryName: 'core',
   allSrc: 'src/**/*',
   allTs: 'src/**/!(*.spec).ts',

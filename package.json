@@ -1,5 +1,5 @@
 {
-  "name": "core",
+  "name": "@angular-material-extensions/core",
   "description": "Set of components, directives and services to boost the app development with angular material 2",
   "version": "0.0.1",
   "homepage": "https://github.com/angular-material-extensions/core",
@@ -76,6 +76,7 @@
     "gulp-tslint": "^8.1.3",
     "html-loader": "^0.5.5",
     "jest": "^23.6.0",
+    "jest-cli": "^24.1.0",
     "jest-preset-angular": "^6.0.2",
     "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
@@ -94,6 +95,7 @@
     "source-map-loader": "^0.2.4",
     "to-string-loader": "^1.1.5",
     "travis-status": "^3.0.1",
+    "tsickle": "~0.34.3",
     "tslint": "~5.12.0",
     "typescript": "~3.1.6",
     "yargs": "~12.0.5",
