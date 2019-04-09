@@ -67,7 +67,7 @@ export class MatSplashScreenService {
       this._animationBuilder
         .build([
           style({opacity: '1'}),
-          animate('10000ms ease', style({
+          animate('2000ms ease', style({
             opacity: '0',
             zIndex: '-10'
           }))
