@@ -9,6 +9,7 @@ import {MatRadioDialog} from './mat-radio-dialog/mat-radio-dialog.component';
 import {MatSelectDialog} from './mat-select-dialog/mat-select-dialog.component';
 import {MatTimerDialog} from './mat-timer-dialog/mat-timer-dialog.component';
 import {MatButtonModule, MatDialogModule, MatIconModule} from '@angular/material';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 
 // Export module's public API
@@ -36,11 +37,12 @@ export const dialogs = [
 @NgModule({
   imports: [
     CommonModule,
+    FlexLayoutModule,
     MatDialogModule,
     MatButtonModule,
     MatIconModule
   ],
-  exports: [...dialogs, MatDialogModule],
+  exports: [...dialogs, MatDialogModule, FlexLayoutModule],
   entryComponents: [...dialogs],
   declarations: [...dialogs]
 })

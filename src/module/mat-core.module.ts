@@ -7,7 +7,7 @@ import {MatSplashScreenService} from './services/splash/mat-splash-screen.servic
 // Export module's public API
 export {MatSplashScreenService} from './services/splash/mat-splash-screen.service';
 export {MatDialogsModule} from './components/dialogs/mat-dialogs.module';
-export {MatAlertDialog} from './components/dialogs/mat-alert-dialog/mat-alert-dialog.component';
+export {MatAlertDialog, MatAlertDialogData} from './components/dialogs/mat-alert-dialog/mat-alert-dialog.component';
 export {MatAsyncDialog} from './components/dialogs/mat-async-dialog/mat-async-dialog.component';
 export {MatConfirmDialog, MatConfirmDialogData} from './components/dialogs/mat-confirm-dialog/mat-confirm-dialog.component';
 export {MatInputDialog} from './components/dialogs/mat-input-dialog/mat-input-dialog.component';

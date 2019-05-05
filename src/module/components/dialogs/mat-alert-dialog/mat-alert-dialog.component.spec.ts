@@ -12,7 +12,9 @@ describe('MatAlertDialog', () => {
     TestBed.configureTestingModule({
       declarations: [ MatAlertDialog ],
       imports: [...STATIC_IMPORTS],
-      providers: [{provide: MatDialogRef, useValue: {}}]
+      providers: [
+        {provide: MatDialogRef, useValue: {}}
+        ]
     })
     .compileComponents();
   }));

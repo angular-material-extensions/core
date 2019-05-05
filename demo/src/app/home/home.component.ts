@@ -1,8 +1,8 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 import sdk from '@stackblitz/sdk';
-import {MatDialog, MatDialogRef} from '@angular/material';
-import {MatConfirmDialog, MatConfirmDialogData} from '@angular-material-extensions/core';
+import {MatDialog} from '@angular/material';
+import {MatAlertDialog, MatAlertDialogData, MatConfirmDialog, MatConfirmDialogData} from '@angular-material-extensions/core';
 
 @Component({
   selector: 'app-home',
@@ -24,6 +24,18 @@ export class HomeComponent implements OnInit {
 
   editOnStackBlitz() {
     sdk.openGithubProject('angular-material-extensions/core/tree/master/demo');
+  }
+
+  openAlertDialog() {
+    const matAlertDialogData: MatAlertDialogData = {
+      message: 'Are you sure you want to execute the following action ?'
+    };
+
+    this.dialog
+      .open(MatAlertDialog, {data: matAlertDialogData})
+      .afterClosed()
+      .subscribe((confirmed: boolean) => console.log('confirmed -> ', confirmed));
+
   }
 
   openConfirmDialog() {

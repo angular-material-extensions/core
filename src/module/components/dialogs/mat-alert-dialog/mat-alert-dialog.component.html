@@ -1,16 +1,17 @@
 <mat-dialog-content fxLayout="column" fxLayoutAlign="center center">
-  <mat-icon>warning</mat-icon>
+  <mat-icon color="warn">warning</mat-icon>
   <div class="title">
-    Confirm your e-mail address!
+    {{title}}
   </div>
   <div class="subtitle">
-    <p>A confirmation e-mail has been sent to</p>
+    <p>{{message}}</p>
   </div>
 </mat-dialog-content>
 
 <mat-dialog-actions fxLayoutAlign="center center">
-  <a mat-button
-     color="primary">
-    Go back
-  </a>
+  <button mat-button
+          matDialogClose
+          color="primary">
+    {{okTextButton}}
+  </button>
 </mat-dialog-actions>
