@@ -1,4 +1,4 @@
-import {Component, Inject, OnInit} from '@angular/core';
+import {Component, Inject, OnInit, Optional} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
 
 export interface MatAlertDialogData {
@@ -23,7 +23,7 @@ export class MatAlertDialog implements OnInit {
   okTextButton: string;
 
   constructor(public dialogRef: MatDialogRef<MatAlertDialog>,
-              @Inject(MAT_DIALOG_DATA) public data: MatAlertDialogData) {
+              @Optional() @Inject(MAT_DIALOG_DATA) public data: MatAlertDialogData) {
   }
 
   ngOnInit() {

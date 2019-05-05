@@ -8,7 +8,7 @@ import {MatLoadingDialog} from './mat-loading-dialog/mat-loading-dialog.componen
 import {MatRadioDialog} from './mat-radio-dialog/mat-radio-dialog.component';
 import {MatSelectDialog} from './mat-select-dialog/mat-select-dialog.component';
 import {MatTimerDialog} from './mat-timer-dialog/mat-timer-dialog.component';
-import {MatButtonModule, MatDialogModule} from '@angular/material';
+import {MatButtonModule, MatDialogModule, MatIconModule} from '@angular/material';
 
 
 // Export module's public API
@@ -30,14 +30,15 @@ export const dialogs = [
   MatLoadingDialog,
   MatRadioDialog,
   MatSelectDialog,
-  MatTimerDialog
+  MatTimerDialog,
 ];
 
 @NgModule({
   imports: [
     CommonModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   exports: [...dialogs, MatDialogModule],
   entryComponents: [...dialogs],
