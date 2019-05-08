@@ -8,7 +8,7 @@ import {MatLoadingDialog} from './mat-loading-dialog/mat-loading-dialog.componen
 import {MatRadioDialog} from './mat-radio-dialog/mat-radio-dialog.component';
 import {MatSelectDialog} from './mat-select-dialog/mat-select-dialog.component';
 import {MatTimerDialog} from './mat-timer-dialog/mat-timer-dialog.component';
-import {MatButtonModule, MatDialogModule, MatIconModule} from '@angular/material';
+import {MatButtonModule, MatDialogModule, MatIconModule, MatInputModule, MatProgressSpinnerModule, MatRadioModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
 
@@ -40,7 +40,10 @@ export const dialogs = [
     FlexLayoutModule,
     MatDialogModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule,
+    MatProgressSpinnerModule,
+    MatRadioModule
   ],
   exports: [...dialogs, MatDialogModule, FlexLayoutModule],
   entryComponents: [...dialogs],
