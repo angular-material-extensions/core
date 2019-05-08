@@ -13,7 +13,7 @@
 </mat-dialog-content>
 <mat-dialog-actions fxLayoutAlign="center center">
   <button mat-raised-button
-          (click)="dialogRef.close(radioGroup.value)"
+          (click)="dialogRef.close(radioGroup.selected.value)"
           [color]="color">
     {{textButton}}
   </button>
