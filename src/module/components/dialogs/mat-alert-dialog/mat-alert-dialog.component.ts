@@ -1,6 +1,8 @@
 import {Component, Inject, OnInit, Optional} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
 
+export type AlertType = 'primary' | 'accent' | 'warn';
+
 export interface MatAlertDialogData {
   title?: string;
   icon?: string;
@@ -29,8 +31,8 @@ export class MatAlertDialog implements OnInit {
   ngOnInit() {
     if (this.data) {
       this.title = this.data.title ? this.data.title : 'Alert';
-      this.icon = this.data.icon ? this.data.icon : 'warn';
-      this.type = this.data.type ? this.data.type : 'Confirm';
+      this.icon = this.data.icon ? this.data.icon : 'warning';
+      this.type = this.data.type ? this.data.type : 'warn';
       this.message = this.data.message ? this.data.message : 'Cancel';
       this.okTextButton = this.data.okTextButton ? this.data.okTextButton : 'Ok';
     }
