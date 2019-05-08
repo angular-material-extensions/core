@@ -1,3 +1,13 @@
-<p>
-  mat-radio-dialog works!
-</p>
+<mat-dialog-content fxLayout="column">
+  <div class="title">
+    {{title}}
+  </div>
+  <div fxFlex fxLayout="row" fxLayoutAlign="center center">
+    <mat-radio-group #radioGroup>
+      <mat-radio-button *ngFor="let season of seasonOptions" name="more_options" [value]="season">
+        {{season}}
+      </mat-radio-button>
+    </mat-radio-group>
+  </div>
+</mat-dialog-content>
+
