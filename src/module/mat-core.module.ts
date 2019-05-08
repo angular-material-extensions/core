@@ -12,8 +12,8 @@ export {MatAsyncDialog, MatAsyncDialogData} from './components/dialogs/mat-async
 export {MatConfirmDialog, MatConfirmDialogData} from './components/dialogs/mat-confirm-dialog/mat-confirm-dialog.component';
 export {MatInputDialog, MatInputDialogData} from './components/dialogs/mat-input-dialog/mat-input-dialog.component';
 export {MatLoadingDialog, MatLoadingDialogData} from './components/dialogs/mat-loading-dialog/mat-loading-dialog.component';
-export {MatRadioDialog} from './components/dialogs/mat-radio-dialog/mat-radio-dialog.component';
-export {MatSelectDialog} from './components/dialogs/mat-select-dialog/mat-select-dialog.component';
+export {MatRadioDialog, MatRadioDialogData} from './components/dialogs/mat-radio-dialog/mat-radio-dialog.component';
+export {MatSelectDialog, MatSelectDialogData} from './components/dialogs/mat-select-dialog/mat-select-dialog.component';
 export {MatTimerDialog} from './components/dialogs/mat-timer-dialog/mat-timer-dialog.component';
 
 @NgModule({
