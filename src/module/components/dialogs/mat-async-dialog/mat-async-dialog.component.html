@@ -1,3 +1,9 @@
-<p>
-  mat-async-dialog works!
-</p>
+<mat-dialog-content fxLayout="column">
+  <div class="title">
+    {{title}}
+  </div>
+  <div fxFlex fxLayout="row" fxLayoutAlign="center center">
+    <mat-spinner [color]="color"></mat-spinner>
+  </div>
+</mat-dialog-content>
+
