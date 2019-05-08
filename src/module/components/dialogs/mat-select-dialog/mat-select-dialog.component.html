@@ -1,3 +1,17 @@
-<p>
-  mat-select-dialog works!
-</p>
+<mat-dialog-content fxLayout="column">
+  <div class="title">
+    {{title}}
+  </div>
+  <div fxFlex fxLayout="row" fxLayoutAlign="center center">
+    <h4>Basic mat-select</h4>
+    <mat-form-field>
+      <mat-label>Favorite food</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let option of options" [value]="option.value">
+          {{option.viewValue ? option.viewValue : option.value}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</mat-dialog-content>
+

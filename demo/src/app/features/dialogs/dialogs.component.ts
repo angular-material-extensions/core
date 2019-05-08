@@ -9,7 +9,9 @@ import {
   MatAsyncDialog,
   MatAsyncDialogData,
   MatRadioDialog,
-  MatRadioDialogData
+  MatRadioDialogData,
+  MatSelectDialog,
+  MatSelectDialogData
 } from '@angular-material-extensions/core';
 import {MatDialog} from '@angular/material';
 
@@ -122,7 +124,7 @@ export class DialogsComponent implements OnInit {
   openRadioDialog() {
     this.shouldHide = true;
     const matRadioDialogData: MatRadioDialogData = {
-      title: 'Please choose one of the following options',
+      title: 'Please select one of the following options',
       color: 'accent',
       options: [
         {value: 'WINTER', viewValue: 'winter'},
@@ -134,6 +136,29 @@ export class DialogsComponent implements OnInit {
 
     this.dialog
       .open(MatRadioDialog, {data: matRadioDialogData})
+      .afterClosed()
+      .subscribe((option) => {
+        console.log('selected options', option);
+        this.shouldHide = false;
+      });
+
+  }
+
+  openSelectDialog() {
+    this.shouldHide = true;
+    const matSelectDialogData: MatSelectDialogData = {
+      title: 'Please select one of the following options',
+      color: 'accent',
+      options: [
+        {value: 'WINTER', viewValue: 'winter'},
+        {value: 'SPRING', viewValue: 'spring'},
+        {value: 'SUMMER', viewValue: 'summer'},
+        {value: 'AUTUMN', viewValue: 'autumn'},
+      ]
+    };
+
+    this.dialog
+      .open(MatSelectDialog, {data: matSelectDialogData})
       .afterClosed()
       .subscribe((option) => {
         console.log('selected options', option);
