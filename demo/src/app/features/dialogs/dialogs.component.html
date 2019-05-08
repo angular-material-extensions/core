@@ -1,3 +1,107 @@
-<p>
-  dialogs works!
-</p>
+<div class="container">
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Alert Dialog (Default)</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img fxLayoutAlign="space-around" mat-card-image src="assets/imgs/dialogs/default_alert_dialog.png">
+      <markdown src="assets/md/dialogs/alert/e1/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openAlertDialog(defaultAlertDialogData)">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Alert Dialog (PRIMARY)</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/primary_alert_dialog.png">
+      <markdown src="assets/md/dialogs/alert/e2/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openAlertDialog(primaryAlertDialogData)">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Alert Dialog (ACCENT)</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/accent_alert_dialog.png">
+      <markdown src="assets/md/dialogs/alert/e3/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openAlertDialog(accentAlertDialogData)">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Alert Dialog (WARN)</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/warn_alert_dialog.png">
+      <markdown src="assets/md/dialogs/alert/e4/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openAlertDialog(warnAlertDialogData)">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Confirm Dialog</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/confirm_dialog.png">
+      <markdown src="assets/md/dialogs/confirm/e1/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openConfirmDialog()">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Input Dialog</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/confirm_dialog.png">
+      <markdown src="assets/md/dialogs/confirm/e1/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openInputDialog()">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Material Async Dialog</mat-card-title>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+      <img mat-card-image src="assets/imgs/dialogs/confirm_dialog.png">
+      <markdown src="assets/md/dialogs/confirm/e1/ts.md"></markdown>
+    </mat-card-content>
+    <mat-card-actions fxLayoutAlign="center">
+      <button mat-raised-button
+              color="primary"
+              (click)="openAsyncDialog()">
+        TRY IT
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

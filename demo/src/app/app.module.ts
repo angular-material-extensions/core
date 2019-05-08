@@ -7,9 +7,10 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppSharedModule} from './shared/shared.module';
 import {HomeModule} from './home/home.module';
 import {AppComponent} from './app.component';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {MatCoreModule, MatSplashScreenService} from '@angular-material-extensions/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MarkdownModule} from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     // the page.
     BrowserModule.withServerTransition({appId: 'core-demo-id'}),
     MatCoreModule.forRoot(),
+    MarkdownModule.forRoot({ loader: HttpClient }),
     TransferHttpCacheModule,
     FormsModule,
     HttpClientModule,
