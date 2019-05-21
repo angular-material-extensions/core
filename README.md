@@ -28,12 +28,6 @@ by starring :star: and sharing it :loudspeaker:
 ## Table of Contents
 - [Demo](#demo)
 - [Components](#components)
-
-- [Dependencies](#dependencies)
-- [Installation](#installation)
-- [API](#api)
-- [Usage](#usage)
-
 - [Run Demo App Locally](#run-demo-app-locally)
 - [Development](#development)
 - [Other Angular Libraries](#other-angular-libraries)
@@ -43,8 +37,6 @@ by starring :star: and sharing it :loudspeaker:
 ## Demo
 
 View all the directives in action at https://angular-material-extensions.github.io/core
-
-
 
 ## Other Angular Libraries
 - [ngx-auth-firebaseui](https://github.com/AnthonyNahas/ngx-auth-firebaseui)
