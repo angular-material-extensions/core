@@ -1,7 +1,7 @@
 {
   "name": "@angular-material-extensions/core",
   "description": "Set of components, directives and services to boost the app development with angular material 2",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/angular-material-extensions/core",
   "author": {
     "name": "Anthony Nahas",
