@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.titleService.setTitle('Home | core');
+    this.titleService.setTitle('@angular-material-extensions/core');
   }
 
   editOnStackBlitz() {

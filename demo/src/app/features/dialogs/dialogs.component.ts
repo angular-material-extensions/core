@@ -14,6 +14,7 @@ import {
   MatSelectDialogData
 } from '@angular-material-extensions/core';
 import {MatDialog} from '@angular/material';
+import sdk from '@stackblitz/sdk';
 
 @Component({
   selector: 'app-dialogs',
@@ -54,6 +55,10 @@ export class DialogsComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  editOnStackBlitz() {
+    sdk.openGithubProject('angular-material-extensions/core/tree/master/demo');
   }
 
   openAlertDialog(matAlertDialogData: MatAlertDialogData) {
