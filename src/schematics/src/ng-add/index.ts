@@ -78,6 +78,7 @@ export function getPackageVersionFromPackageJson(tree: Tree, name: string): stri
     return null;
   }
 
+  // tslint:disable-next-line:no-non-null-assertion
   const packageJson = JSON.parse(tree.read('package.json')!.toString('utf8'));
 
   if (packageJson.dependencies && packageJson.dependencies[name]) {

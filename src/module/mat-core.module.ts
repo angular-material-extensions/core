@@ -4,10 +4,14 @@ import {ModuleWithProviders, NgModule} from '@angular/core';
 import {MatSplashScreenService} from './services/splash/mat-splash-screen.service';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatButtonModule, MatMenuModule} from '@angular/material';
+import {MatLanguageMenuComponent} from './components/mat-language-menu/mat-language-menu.component';
 
 
 // Export module's public API
+// CORE
 export {MatSplashScreenService} from './services/splash/mat-splash-screen.service';
+export {MatLanguageMenuComponent} from './components/mat-language-menu/mat-language-menu.component';
+// DIALOGS
 export {MatDialogsModule} from './components/dialogs/mat-dialogs.module';
 export {MatAlertDialog, MatAlertDialogData, AlertType} from './components/dialogs/mat-alert-dialog/mat-alert-dialog.component';
 export {MatAsyncDialog, MatAsyncDialogData} from './components/dialogs/mat-async-dialog/mat-async-dialog.component';
@@ -28,7 +32,7 @@ export {MatTimerDialog} from './components/dialogs/mat-timer-dialog/mat-timer-di
   ],
   exports: [],
   entryComponents: [],
-  declarations: [],
+  declarations: [MatLanguageMenuComponent],
 })
 export class MatCoreModule {
   static forRoot(): ModuleWithProviders {
