@@ -12,6 +12,7 @@
     "url": "git://github.com/angular-material-extensions/core.git"
   },
   "license": "MIT",
+  "schematics": "./schematics/collection.json",
   "keywords": [
     "angular",
     "material2",
@@ -28,7 +29,12 @@
   },
   "private": true,
   "scripts": {
-    "start": "gulp build",
+    "build": "gulp build",
+    "build:doc": "gulp build:doc",
+    "build:schematics": "gulp build:schematics",
+    "build:watch:fast": "gulp build:watch-fast",
+    "link": "gulp link",
+    "unlink": "gulp unlink",
     "test": " gulp test",
     "demo": " gulp build:demo",
     "check-travis": " travis-status --repo=angular-material-extensions/core --branch=master --fail-pending || echo 'Not yet passing'"
@@ -43,6 +49,7 @@
     "@angular/router": "^7.2.15"
   },
   "devDependencies": {
+    "@angular-devkit/schematics": "^7.3.9",
     "@angular/animations": "^7.2.15",
     "@angular/compiler": "^7.2.15",
     "@angular/compiler-cli": "^7.2.15",
@@ -50,6 +57,7 @@
     "@angular/platform-browser-dynamic": "^7.2.15",
     "@angular/platform-server": "^7.2.15",
     "@compodoc/gulp-compodoc": "^0.0.10",
+    "@types/jasmine": "^3.3.12",
     "@types/jest": "^23.3.10",
     "@types/lodash": "^4.14.130",
     "@types/node": "^10.14.7",
@@ -101,7 +109,8 @@
     "tslint": "~5.15.0",
     "typescript": "~3.2.4",
     "yargs": "^13.2.4",
-    "zone.js": "^0.9.1"
+    "zone.js": "^0.9.1",
+    "schematics-utilities": "^1.1.2"
   },
   "engines": {
     "node": ">=8.0.0"
