@@ -102,15 +102,18 @@
     "run-sequence": "^2.2.1",
     "rxjs": "^6.5.2",
     "sass-loader": "^7.1.0",
+    "schematics-utilities": "^1.1.2",
     "source-map-loader": "^0.2.4",
     "to-string-loader": "^1.1.5",
     "travis-status": "^3.0.1",
     "tsickle": "~0.34.3",
     "tslint": "~5.15.0",
     "typescript": "~3.2.4",
+    "webpack": "^4.32.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-node-externals": "^1.7.2",
     "yargs": "^13.2.4",
-    "zone.js": "^0.9.1",
-    "schematics-utilities": "^1.1.2"
+    "zone.js": "^0.9.1"
   },
   "engines": {
     "node": ">=8.0.0"
