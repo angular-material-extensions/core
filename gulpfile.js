@@ -633,7 +633,7 @@ gulp.task('create-new-tag', (cb) => {
 });
 
 // Build and then Publish 'dist' folder to NPM
-gulp.task('npm-publish', ['build'], () => {
+gulp.task('npm-publish', ['build', 'build:schematics'], () => {
   return execExternalCmd('npm', `publish ${config.outputDir} --access public`)
 });
 
