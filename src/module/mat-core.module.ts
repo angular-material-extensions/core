@@ -2,6 +2,8 @@ import {CommonModule} from '@angular/common';
 import {ModuleWithProviders, NgModule} from '@angular/core';
 
 import {MatSplashScreenService} from './services/splash/mat-splash-screen.service';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {MatButtonModule, MatMenuModule} from '@angular/material';
 
 
 // Export module's public API
@@ -19,6 +21,9 @@ export {MatTimerDialog} from './components/dialogs/mat-timer-dialog/mat-timer-di
 @NgModule({
   imports: [
     CommonModule,
+    FlexLayoutModule,
+    MatButtonModule,
+    MatMenuModule
     // MatDialogModule
   ],
   exports: [],

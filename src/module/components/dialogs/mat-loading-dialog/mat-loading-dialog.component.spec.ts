@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MatLoadingDialog } from './mat-loading-dialog.component';
 import {STATIC_IMPORTS} from '../test/helper';
-import {MatDialogRef} from '@angular/material';
+import {MatDialogRef, MatProgressSpinnerModule} from '@angular/material';
 
 describe('MatLoadingDialogComponent', () => {
   let component: MatLoadingDialog;
@@ -11,7 +11,7 @@ describe('MatLoadingDialogComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ MatLoadingDialog ],
-      imports: [...STATIC_IMPORTS],
+      imports: [...STATIC_IMPORTS, MatProgressSpinnerModule],
       providers: [{provide: MatDialogRef, useValue: {}}]
     })
     .compileComponents();
