@@ -4,6 +4,7 @@ import {HomeRoutingModule} from './home-routing.module';
 import {HomeComponent} from './home.component';
 import {MatDialogsModule} from '@angular-material-extensions/core';
 import {MatButtonModule, MatCardModule, MatDialogModule} from '@angular/material';
+import { MatLanguageMenuComponent } from '../../../../src/module/components/mat-language-menu/mat-language-menu.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,7 @@ import {MatButtonModule, MatCardModule, MatDialogModule} from '@angular/material
     MatButtonModule,
     MatCardModule
   ],
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, MatLanguageMenuComponent],
 })
 export class HomeModule {
 }
