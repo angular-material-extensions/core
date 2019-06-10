@@ -30,7 +30,7 @@ export {MatTimerDialog} from './components/dialogs/mat-timer-dialog/mat-timer-di
     MatMenuModule
     // MatDialogModule
   ],
-  exports: [],
+  exports: [MatLanguageMenuComponent],
   entryComponents: [],
   declarations: [MatLanguageMenuComponent],
 })

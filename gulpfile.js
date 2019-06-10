@@ -504,7 +504,8 @@ gulp.task('serve:demo-hmr', () => {
 });
 
 gulp.task('build:demo', () => {
-  return execDemoCmd(`build --preserve-symlinks --prod --base-href /core/ --deploy-url /core/`, {cwd: `${config.demoDir}`});
+  // return execDemoCmd(`build --preserve-symlinks --prod --base-href /core/ --deploy-url /core/`, {cwd: `${config.demoDir}`});
+  return execDemoCmd(`build --preserve-symlinks --base-href /core/ --deploy-url /core/`, {cwd: `${config.demoDir}`});
 });
 
 gulp.task('serve:demo-ssr', ['build:demo-ssr'], () => {
