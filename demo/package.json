@@ -50,7 +50,7 @@
     "@nguniversal/express-engine": "^7.0.2",
     "@nguniversal/module-map-ngfactory-loader": "^7.0.2",
     "@types/jest": "^24.0.13",
-    "@types/node": "^11.13.11",
+    "@types/node": "^14.0.2",
     "codelyzer": "^4.5.0",
     "express": "^4.17.0",
     "greenkeeper-lockfile": "1.15.1",
